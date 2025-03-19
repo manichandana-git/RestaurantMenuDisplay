@@ -18,7 +18,7 @@ CREATE TABLE menu_items (
     category VARCHAR(50) NOT NULL
 );
 
--- Sample Menu Items
+-- Sample Menu Items to dispay on the home page
 INSERT INTO menu_items (name, description, price, category) VALUES
 ('Burger', 'Delicious grilled burger', 5.99, 'Fast Food'),
 ('Pizza', 'Cheesy pepperoni pizza', 8.99, 'Italian'),

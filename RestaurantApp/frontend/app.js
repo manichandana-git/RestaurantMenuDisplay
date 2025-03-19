@@ -19,6 +19,6 @@ createApp({
         }
     },
     mounted() {
-        this.fetchMenu();  // ✅ Fetch menu on page load
+        this.fetchMenu();  // Fetches menu on page load
     }
 }).mount('#app');

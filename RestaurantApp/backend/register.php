@@ -6,10 +6,10 @@ header("Content-Type: application/json");
 
 include 'db.php';
 
-// ✅ Read JSON input properly
+// Reading input in JSON format
 $data = json_decode(file_get_contents("php://input"), true);
 
-// ✅ Check if data is empty
+// Checking if the data is empty
 if (!isset($data['name']) || !isset($data['email']) || !isset($data['password'])) {
     echo json_encode(["message" => "Invalid input! All fields are required."]);
     exit;
@@ -19,16 +19,17 @@ $name = trim($data['name']);
 $email = trim($data['email']);
 $password = trim($data['password']);
 
-// ✅ Validate input
+// Validating input
 if (empty($name) || empty($email) || empty($password)) {
     echo json_encode(["message" => "Please fill all fields."]);
     exit;
 }
 
-// ✅ Hash password
+// Ebcrypting the password while storing in database (hash)
 $hashed_password = password_hash($password, PASSWORD_BCRYPT);
 
-// ✅ Check if email already exists
+// Chceking if the entered email already exists,
+//If yes, application will give them link to login to remind them.
 $check = $conn->prepare("SELECT id FROM users WHERE email = ?");
 $check->bind_param("s", $email);
 $check->execute();
@@ -39,7 +40,7 @@ if ($check->num_rows > 0) {
     exit;
 }
 
-// ✅ Insert user
+// Inserting user details into the database
 $query = $conn->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
 $query->bind_param("sss", $name, $email, $hashed_password);
 
