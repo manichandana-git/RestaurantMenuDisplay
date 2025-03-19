@@ -1,8 +1,8 @@
-Hey Folks,
+<h1>Hey Folks,</h1>
 
 <h1>Welcome to my learning space!</h1>
 
-This is a very simple web application to display the restaurant menu developed in very less time.
+<h3>This is a very simple web application to display the restaurant menu developed in very less time.</h3>
 
 Techstack:
 
