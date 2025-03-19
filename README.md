@@ -1,59 +1,59 @@
-# My Learning Space 🚀
+# 🌟 **My Learning Space** 
 
-## Hey Folks,  
-### Welcome to my learning space!  
+## **Hey Folks,**  
+### **Welcome to my learning space!**  
 
-This is a very simple web application to display the restaurant menu, developed in a short time.  
+This is a simple web application to display a **restaurant menu**, developed in a short time.  
 
 ---
 
-## **📌 Tech Stack**
+## ** Tech Stack**
+<details>
+<summary>Click to Expand 🔽</summary>
 
-### **Frontend**
-- HTML, CSS, JavaScript, Vue.js  
+### **🖥 Frontend**
+- 🟢 **HTML**
+- 🔵 **CSS**
+- 🟠 **JavaScript**
+- 🟣 **Vue.js**
 
 ### **Backend**
-- PHP, RESTful API, MySQL  
+- 🟡 **PHP**
+- 🟠 **RESTful API**
+- 🔵 **MySQL**
 
-### **Database**
-- MySQL Workbench, PHP MySQLi  
+### ** Database**
+- 🟢 **MySQL Workbench**
+- 🔵 **PHP MySQLi**
 
-### **Testing**
-- PHPUnit, Jest, Postman  
+### ** Testing**
+- ✅ **PHPUnit**
+- ✅ **Jest**
+- ✅ **Postman**
 
-### **IDE Tools**
-- VS Code  
+### ** IDE Tools**
+-  **VS Code**
+</details>
 
 ---
 
 ## **🎨 UI Styling Preview**
-Here’s how the UI is styled:
 ```css
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light Gray */
     color: #333;
     text-align: center;
-    margin: 0;
     padding: 20px;
 }
 
 h1 {
     font-size: 36px;
-    color: #ff6600;
+    color: #e63946; /* Red */
     margin-bottom: 10px;
 }
 
 h2 {
     font-size: 24px;
-    color: #007bff;
-}
-
-.container {
-    width: 60%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #457b9d; /* Blue */
 }
