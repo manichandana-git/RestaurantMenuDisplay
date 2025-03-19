@@ -1,6 +1,6 @@
 Hey Folks,
 
-Welcome to my learning space!
+<h1>Welcome to my learning space!</h1>
 
 This is a very simple web application to display the restaurant menu developed in very less time.
 
