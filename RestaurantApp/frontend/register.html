@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register | Restaurant App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const password = document.getElementById("password").value.trim();
+
+            fetch("http://localhost:8000/register.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name, email, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.message === "Registration successful") {
+                    window.location.href = "index.html";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Registration failed! Check console for details.");
+            });
+        });
+    </script>
+</body>
+</html>

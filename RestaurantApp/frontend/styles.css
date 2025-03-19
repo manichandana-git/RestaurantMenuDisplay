@@ -1,0 +1,82 @@
+/* 🌟 Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Main Container */
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Headings */
+h1 {
+    font-size: 28px;
+    color: #ff6600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Forms */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc5200;
+}
+
+/* 🌟 Menu Items */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff3e0;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 5px;
+    width: 60%;
+    font-size: 18px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
