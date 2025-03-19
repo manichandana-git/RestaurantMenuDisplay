@@ -6,10 +6,10 @@ header("Content-Type: application/json");
 
 include 'db.php';
 
-// ✅ Read JSON input properly
+// Reading JSON
 $data = json_decode(file_get_contents("php://input"), true);
 
-// ✅ Check if data is received properly
+// Check if data is received properly
 if (!isset($data['email']) || !isset($data['password'])) {
     echo json_encode(["success" => false, "message" => "Invalid input! Email and Password are required."]);
     exit;
@@ -18,13 +18,13 @@ if (!isset($data['email']) || !isset($data['password'])) {
 $email = trim($data['email']);
 $password = trim($data['password']);
 
-// ✅ Validate input
+// Validating the input
 if (empty($email) || empty($password)) {
     echo json_encode(["success" => false, "message" => "Please enter both email and password."]);
     exit;
 }
 
-// ✅ Check if user exists
+// Check if the user exists by retrieving the details from the database
 $query = $conn->prepare("SELECT password FROM users WHERE email = ?");
 $query->bind_param("s", $email);
 $query->execute();

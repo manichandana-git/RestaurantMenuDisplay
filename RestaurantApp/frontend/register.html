@@ -29,7 +29,8 @@
             .then(response => response.json())
             .then(data => {
                 alert(data.message);
-                if (data.message === "Registration successful") {
+                if (data.message === "Registration successful") { 
+                    // After successfull registration, I wanted it to go to index page again to give login option
                     window.location.href = "index.html";
                 }
             })
