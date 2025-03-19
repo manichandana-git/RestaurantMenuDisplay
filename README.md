@@ -37,23 +37,6 @@ This is a simple web application to display a **restaurant menu**, developed in 
 
 ---
 
-## **🎨 UI Styling Preview**
-```css
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light Gray */
-    color: #333;
-    text-align: center;
-    padding: 20px;
-}
+<h3>It was very inetersting writing these codes including scripting languages. I will definetely go ahead and learn more and add more features</h3>
 
-h1 {
-    font-size: 36px;
-    color: #e63946; /* Red */
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #457b9d; /* Blue */
-}
+<h2> Kudos to learning!</h2>
