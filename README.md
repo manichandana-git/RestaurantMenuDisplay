@@ -37,6 +37,6 @@ This is a simple web application to display a **restaurant menu**, developed in 
 
 ---
 
-<h3>It was very inetersting writing these codes including scripting languages. I will definetely go ahead and learn more and add more features</h3>
+<h3>It was very interesting writing these codes including scripting languages. I will definetely go ahead and learn more and add more features</h3>
 
 <h2> Kudos to learning!</h2>
